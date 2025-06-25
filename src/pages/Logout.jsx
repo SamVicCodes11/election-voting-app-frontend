@@ -20,7 +20,7 @@ const Logout = () => {
 
     // Navigate after small delay
     const timeout = setTimeout(() => {
-      navigate("/"); // or "/" based on your routing
+      navigate("/"); 
     }, 2500);
 
     return () => clearTimeout(timeout);

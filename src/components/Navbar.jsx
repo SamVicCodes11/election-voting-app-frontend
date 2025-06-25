@@ -16,7 +16,8 @@ const Navbar = () => {
   );
   const token = useSelector((state) => state.vote.currentVoter?.token);
 
-  // const location = useLocation();
+  const location = useLocation();
+
   // const dispatch = useDispatch();
   // const navigate = useNavigate();
 

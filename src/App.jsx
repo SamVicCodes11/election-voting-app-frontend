@@ -9,22 +9,12 @@ import Navbar from "./components/Navbar";
 import Logout from "./pages/Logout";
 import Results from "./pages/Results";
 import Candidates from "./pages/Candidates";
-import { useEffect } from "react";
-import { voteActions } from "./components/store/vote-slice";
-import { useDispatch } from "react-redux";
+
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
-  const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   const storedVoter = JSON.parse(localStorage.getItem("currentVoter"));
-  //   if (storedVoter) {
-  //     dispatch(voteActions.changeCurrentVoter(storedVoter));
-  //   }
-  // }, []);
 
   return (
     <Router>

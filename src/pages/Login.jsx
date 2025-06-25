@@ -28,26 +28,28 @@ const Login = () => {
 
   const loginVoter = async (e) => {
     e.preventDefault();
+    setError(""); // Clear previous error
 
     try {
       const baseURL = import.meta.env.VITE_API_BASE_URL;
 
       const response = await axios.post(`${baseURL}/voters/login`, userData);
 
-      // Extract voter info from response
       const newVoter = response.data.voter;
 
-      // Save voter to localStorage
+      // Save to localStorage
       localStorage.setItem("currentVoter", JSON.stringify(newVoter));
 
       // Update Redux store
       dispatch(voteActions.changeCurrentVoter(newVoter));
 
-      // Show success toast
+      // Show success message
       toast.success("Login successful!");
 
-      // Redirect to results page
-      navigate("/results");
+      // Slight delay before navigating
+      setTimeout(() => {
+        navigate("/results", { replace: true });
+      }, 100);
     } catch (err) {
       const message =
         err?.response?.data?.message || "Login failed. Please try again.";

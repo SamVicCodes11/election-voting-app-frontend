@@ -20,9 +20,7 @@ const ErrorPage = () => {
         <h1>404</h1>
 
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis at
-          doloribus unde excepturi laboriosam id ratione natus eligendi
-          dignissimos cum.
+         PAGE NOT FOUND
         </p>
       </div>
     </section>

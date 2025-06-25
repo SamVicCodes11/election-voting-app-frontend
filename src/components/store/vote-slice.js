@@ -18,7 +18,7 @@ const voteSlice = createSlice({
       state.selectedVoteCandidate = action.payload;
     },
     changeCurrentVoter(state, action) {
-      state.selectedVoteCandidate = action.payload;
+      state.currentVoter = action.payload; 
     },
     changeSelectedElection(state, action) {
       state.selectedElection = action.payload;
@@ -33,5 +33,4 @@ const voteSlice = createSlice({
 });
 
 export const voteActions = voteSlice.actions;
-
 export default voteSlice;
