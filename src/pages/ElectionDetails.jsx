@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { candidates, elections, voters } from "../Data";
+// import { candidates, elections, voters } from "../Data";
 import { useNavigate, useParams } from "react-router-dom";
 import ElectionCandidates from "./ElectionCandidates";
 import { IoAddOutline } from "react-icons/io5";

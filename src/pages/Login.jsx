@@ -14,6 +14,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const [userData, setUserData] = useState({
     email: "",
@@ -28,7 +29,8 @@ const Login = () => {
 
   const loginVoter = async (e) => {
     e.preventDefault();
-    setError(""); // Clear previous error
+    setError("");
+    setLoading(true); // Start loading
 
     try {
       const baseURL = import.meta.env.VITE_API_BASE_URL;
@@ -37,16 +39,11 @@ const Login = () => {
 
       const newVoter = response.data.voter;
 
-      // Save to localStorage
       localStorage.setItem("currentVoter", JSON.stringify(newVoter));
-
-      // Update Redux store
       dispatch(voteActions.changeCurrentVoter(newVoter));
 
-      // Show success message
       toast.success("Login successful!");
 
-      // Slight delay before navigating
       setTimeout(() => {
         navigate("/results", { replace: true });
       }, 100);
@@ -55,6 +52,8 @@ const Login = () => {
         err?.response?.data?.message || "Login failed. Please try again.";
       console.error("Login error:", message);
       setError(message);
+    } finally {
+      setLoading(false); // End loading
     }
   };
 
@@ -89,8 +88,8 @@ const Login = () => {
             Don't have an account? <Link to="/register">Sign up</Link>
           </p>
 
-          <button type="submit" className="btn primary">
-            Login
+          <button type="submit" className="btn primary" disabled={loading}>
+            {loading ? "Logging in..." : "Login"}
           </button>
         </form>
       </div>

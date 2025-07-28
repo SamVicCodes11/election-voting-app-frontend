@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { elections } from "./../Data";
+// import { elections } from "./../Data";
 import Election from "./Election";
 import { UiActions } from "../components/store/ui-slice";
 import UpdateElection from "../components/UpdateElection";

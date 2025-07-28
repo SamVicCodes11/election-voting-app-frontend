@@ -9,6 +9,8 @@ const Register = () => {
 
   const navigate = useNavigate();
 
+  const [loading, setLoading] = useState(false);
+
   const [error, setError] = useState("");
 
   const [userData, setUserData] = useState({
@@ -26,16 +28,31 @@ const Register = () => {
 
   const registerVoter = async (e) => {
     e.preventDefault();
+    setError(""); // reset error
+    setLoading(true); // start loading
+
+    if (userData.password !== userData.password2) {
+      setError("Passwords do not match");
+      setLoading(false);
+      return;
+    }
+
+    if (userData.password.length < 6) {
+      setError("Password should be at least 6 characters long");
+      setLoading(false);
+      return;
+    }
 
     try {
       const baseURL = import.meta.env.VITE_API_BASE_URL;
-
       await axios.post(`${baseURL}/voters/register`, userData);
-
       navigate("/");
     } catch (err) {
-      const errorMessage = err.response.data.message;
+      console.error("Registration error:", err.response?.data || err.message);
+      const errorMessage = err.response?.data?.message;
       setError(errorMessage);
+    } finally {
+      setLoading(false); // stop loading whether success or error
     }
   };
 
@@ -85,8 +102,8 @@ const Register = () => {
             Already have an account? <Link to="/">Login</Link>
           </p>
 
-          <button type="submit" className="btn primary">
-            Register
+          <button type="submit" className="btn primary" disabled={loading}>
+            {loading ? "Registering..." : "Register"}
           </button>
         </form>
       </div>
