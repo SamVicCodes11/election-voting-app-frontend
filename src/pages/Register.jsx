@@ -103,7 +103,13 @@ const Register = () => {
           </p>
 
           <button type="submit" className="btn primary" disabled={loading}>
-            {loading ? "Registering..." : "Register"}
+            {loading ? (
+              <>
+                <span className="spinner_one"></span> Registering...
+              </>
+            ) : (
+              "Register"
+            )}
           </button>
         </form>
       </div>

@@ -89,7 +89,13 @@ const Login = () => {
           </p>
 
           <button type="submit" className="btn primary" disabled={loading}>
-            {loading ? "Logging in..." : "Login"}
+            {loading ? (
+              <>
+                <span className="spinner_one"></span> Logging in...
+              </>
+            ) : (
+              "Login"
+            )}
           </button>
         </form>
       </div>
