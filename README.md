@@ -1,12 +1,59 @@
-# React + Vite
+# 🗳️ SamVic Election - Multi-Election Voting Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack voting application built to ensure secure, transparent, and seamless voting experiences. SamVic Election allows users to participate in multiple elections with real-time result updates, while administrators can manage elections and candidates efficiently. Designed with a focus on data integrity, responsiveness, and user trust.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Visit the Website](https://samvicelection.vercel.app)
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Login Page](../Frontend//src//images/img.png)
+![Home Page](../Frontend//src//images/img2.png)
+![Vote Page](../Frontend//src//images/img3.png)
+![Voters Page](../Frontend//src//images/img4.png)
+![Elections Page](../Frontend//src//images/img5.png)
+![Election details Page](../Frontend//src//images/img6.png)
+
+## ✨ Features
+
+- 🔐 **JWT Authentication** – Secure login and registration system.
+- 🗳️ **Multi-election Voting** – Users can vote once per election, no duplication.
+- 🌗 **Light/Dark Theme** – Toggleable UI themes for accessibility and preference.
+- 🧑‍💼 **Admin Panel** – Manage users, elections, and candidates.
+- ☁️ **Cloudinary Integration** – Upload and manage candidate images.
+- 📱 **Responsive Design** – Fully responsive across devices.
+- 🧠 **Mongoose Sessions & Relationships** – Ensures proper data structure and session handling.
+
+## 🛠️ Tech Stack
+
+**Frontend**: React.js, Redux Toolkit 
+**Backend**: Node.js, Express.js, MongoDB, Mongoose  
+**Authentication**: JSON Web Tokens (JWT), Mongoose Sessions  
+**Cloud & Media**: Cloudinary  
+**Deployment**: Vercel (Frontend), Render or Railway (Backend)
+
+
+
+## 🧪 Usage
+
+- Register/login as a user to view and participate in elections.
+- Cast your vote once per election.
+- Admin users can create, edit, or delete elections and candidates.
+- Uploaded images are securely handled via Cloudinary.
+
+
+
+## 📈 Project Highlights
+
+- Developed a secure voting system enabling over **100+ users** to participate in elections without vote duplication.
+- Improved election transparency and user trust with real-time result updates.
+- Delivered a responsive, mobile-friendly interface enhancing user accessibility and experience.
+
+
+> Built with passion and purpose to simplify voting and increase transparency 🚀
+
+## 👨🏽‍💻 About Me
+
+I'm **Akpobasa Victor Samuel**, a passionate Full-Stack Developer.  
+📫 Reach me: [LinkedIn](https://www.linkedin.com/in/samviccodes) | [Twitter](https://x.com/SamVicCodes)
