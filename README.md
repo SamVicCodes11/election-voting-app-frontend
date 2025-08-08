@@ -9,7 +9,12 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 
 ## 📸 Screenshots
 
+![Login Page](./public/img.png)
+
 ![Home Page](./public/img2.png)
+
+![Vote Page](./public/img3.png)
+
 
 ---
 
@@ -54,10 +59,6 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 
 ---
 
-
-![Login Page](./public/img.png)
-
-![Vote Page](./public/img3.png)
 
 ![Voters Page](./public/img4.png)
 
