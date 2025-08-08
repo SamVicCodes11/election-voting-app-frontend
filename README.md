@@ -6,11 +6,10 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 
 👉 [Visit the Website](https://samvicelection.vercel.app)
 
----
 
 ## 📸 Screenshots
 
-![Home Page](../Frontend/src/images/img2.png)
+![Home Page](./public/img2.png)
 
 ---
 
@@ -56,15 +55,15 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 ---
 
 
-![Login Page](../Frontend/src/images/img.png)
+![Login Page](./public/img.png)
 
-![Vote Page](../Frontend/src/images/img3.png)
+![Vote Page](./public/img3.png)
 
-![Voters Page](../Frontend/src/images/img4.png)
+![Voters Page](./public/img4.png)
 
-![Elections Page](../Frontend/src/images/img5.png)
+![Elections Page](./public/img5.png)
 
-![Election details Page](../Frontend/src/images/img6.png)
+![Election details Page](./public/img6.png)
 
 ---
 
