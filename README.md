@@ -6,14 +6,13 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 
 👉 [Visit the Website](https://samvicelection.vercel.app)
 
+---
+
 ## 📸 Screenshots
 
-![Login Page](../Frontend//src//images/img.png)
-![Home Page](../Frontend//src//images/img2.png)
-![Vote Page](../Frontend//src//images/img3.png)
-![Voters Page](../Frontend//src//images/img4.png)
-![Elections Page](../Frontend//src//images/img5.png)
-![Election details Page](../Frontend//src//images/img6.png)
+![Home Page](../Frontend/src/images/img2.png)
+
+---
 
 ## ✨ Features
 
@@ -25,15 +24,17 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 - 📱 **Responsive Design** – Fully responsive across devices.
 - 🧠 **Mongoose Sessions & Relationships** – Ensures proper data structure and session handling.
 
+---
+
 ## 🛠️ Tech Stack
 
-**Frontend**: React.js, Redux Toolkit 
+**Frontend**: React.js, Redux Toolkit
 **Backend**: Node.js, Express.js, MongoDB, Mongoose  
 **Authentication**: JSON Web Tokens (JWT), Mongoose Sessions  
 **Cloud & Media**: Cloudinary  
-**Deployment**: Vercel (Frontend), Render or Railway (Backend)
+**Deployment**: Vercel (Frontend), Render (Backend)
 
-
+---
 
 ## 🧪 Usage
 
@@ -42,7 +43,7 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 - Admin users can create, edit, or delete elections and candidates.
 - Uploaded images are securely handled via Cloudinary.
 
-
+---
 
 ## 📈 Project Highlights
 
@@ -50,8 +51,22 @@ A full-stack voting application built to ensure secure, transparent, and seamles
 - Improved election transparency and user trust with real-time result updates.
 - Delivered a responsive, mobile-friendly interface enhancing user accessibility and experience.
 
-
 > Built with passion and purpose to simplify voting and increase transparency 🚀
+
+---
+
+
+![Login Page](../Frontend/src/images/img.png)
+
+![Vote Page](../Frontend/src/images/img3.png)
+
+![Voters Page](../Frontend/src/images/img4.png)
+
+![Elections Page](../Frontend/src/images/img5.png)
+
+![Election details Page](../Frontend/src/images/img6.png)
+
+---
 
 ## 👨🏽‍💻 About Me
 
